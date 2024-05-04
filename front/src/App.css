@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+}
+.book_details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book_info {
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 20px; /* отступы между карточками */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-basis: 10%; /* adjust the width as needed */
+  text-align: center;
+}
+.book_info img {
+  height: 250px; /* высота обложки книги */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px; /* отступ между обложкой и текстом */
+}
+.book_description {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px; /* отступы между карточками */
+  flex-basis: 50%; /* adjust the width as needed */
+}
+.book_description h2{
+  text-align: center;
+}
+.ID_enter {
+  display: flex;
+  align-items: center;
+}
+
+.ID_enter input {
+  padding: 8px;
+  width: 200px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  background-color: #481E14;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5f281a;
+}
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.book-card {
+  flex: 0 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 200px; /* ширина карточки */
+  margin: 20px; 
+}
+
+.book-card img {
+  height: 250px; /* высота обложки книги */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px; /* отступ между обложкой и текстом */
+}
+
+.book-card h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.book-card h2 a {
+  text-decoration: none;
+  color: #337ab7; /* цвет ссылки */
+}
+
+.book-card h2 a:hover {
+  color: #23527c; /* цвет ссылки при наведении */
+}
+
+.book-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.book-card p::before {
+  content: "Автор: ";
+  font-weight: bold;
+  color: #333;
+}
+
+.menu{
+  background-color: #481E14;
+  color:white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+}
+.menu ul {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+}
+.menu a,
+.menu .active {
+  display: block;
+  padding: 8px 10px;
+  text-transform: uppercase;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+footer {
+  color: white;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  background-color: #481E14;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.socials{
+  text-align: right;
+  position: relative;
+}
+.social {
+  margin-left: 30px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  float: right;
+}
+.social img{
+position: relative;
+top: 25%;
+right: 25%;
+width: 50%;
+}
+.social:hover{
+    background-color:  #5f281a;
+}
