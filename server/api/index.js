@@ -5,8 +5,8 @@ import usersRoute from '../routes/usersRoute.js';
 import cors from 'cors';
 
 const app = express();
-require('dotenv').config();
-
+import dotenv from 'dotenv';
+dotenv.config();
 app.use(express.json());
 app.use(cors());
 app.get('/', (request, response) => {
