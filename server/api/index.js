@@ -5,6 +5,7 @@ import usersRoute from '../routes/usersRoute.js';
 import cors from 'cors';
 
 const app = express();
+require('dotenv').config();
 
 app.use(express.json());
 app.use(cors());
@@ -20,9 +21,6 @@ mongoose
   .connect(process.env.mongoDBURL)
   .then(() => {
     console.log('App connected to database');
-    app.listen(PORT, () => {
-      console.log(`App is listening to port: ${PORT}`);
-    });
   })
   .catch((error) => {
     console.log(error);
