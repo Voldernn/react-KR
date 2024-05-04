@@ -12,7 +12,7 @@ const UserBooks = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5555/users/login/${login}`)
+      .get(`https://react-kr.vercel.app/users/login/${login}`)
       .then((response) => {
         setUser(response.data);
       })
@@ -21,7 +21,7 @@ const UserBooks = () => {
         setUser(null);
       });
     axios
-      .get(`http://localhost:5555/books/`)
+      .get(`https://react-kr.vercel.app/books/`)
       .then((response) => {
         setBooks(response.data.books);
       })

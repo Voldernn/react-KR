@@ -14,7 +14,7 @@ const UserLogin = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5555/users/login/${login}`)
+      .get(`https://react-kr.vercel.app/users/login/${login}`)
       .then((response) => {
         setUser(response.data);
       })
@@ -23,7 +23,7 @@ const UserLogin = () => {
         setUser(null);
       });
       axios
-      .get(`http://localhost:5555/books/`)
+      .get(`https://react-kr.vercel.app/books/`)
       .then((response) => {
         setBooks(response.data.books);
       })
@@ -39,7 +39,7 @@ const UserLogin = () => {
     if ((user.email == Email) & (user.password == Password) & (hasMatchingBook)) {
         const requestBody = { books: [bookID._id] };
         axios
-          .put(`http://localhost:5555/users/login/${login}`, requestBody)
+          .put(`https://react-kr.vercel.app/users/login/${login}`, requestBody)
         history(`/user/books/${login}`);
     } else {
         alert('Пожалуйста, проверьте введенные данные');

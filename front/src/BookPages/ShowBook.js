@@ -9,7 +9,7 @@ const ShowBook = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5555/books/${id}`)
+      .get(`https://react-kr.vercel.app/books/${id}`)
       .then((response) => {
         setBook(response.data);
       })

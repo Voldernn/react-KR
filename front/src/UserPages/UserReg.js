@@ -11,7 +11,7 @@ const UserReg = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5555/users`)
+      .get(`https://react-kr.vercel.app/users`)
       .then((response) => {
         setUsers(response.data.users);
       })
@@ -32,7 +32,7 @@ const UserReg = () => {
     console.log(existingUser);
     if ((!existingUser) & (!hasEmptyValues)) {
         axios
-          .post(`http://localhost:5555/users/`, data)
+          .post(`https://react-kr.vercel.app/users/`, data)
         history(`/`);
     } else {
         alert('Пожалуйста, проверьте введенные данные');
