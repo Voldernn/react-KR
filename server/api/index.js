@@ -18,7 +18,7 @@ app.use('/books', booksRoute);
 app.use('/users', usersRoute);
 
 mongoose
-  .connect(mongoDBURL)
+  .connect(process.env.mongoDBURL)
   .then(() => {
     console.log('App connected to database');
     app.listen(PORT, () => {
